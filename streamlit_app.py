@@ -12,6 +12,12 @@ if "page" not in st.session_state:
 def go_to(page_name):
     st.session_state.page = page_name
     st.experimental_rerun()
+    
+# 初期化
+if "page" not in st.session_state:
+    st.session_state.page = "top"
+if "start_clicked" not in st.session_state:
+    st.session_state.start_clicked = False
 
 # トップページ
 if st.session_state.page == "top":
