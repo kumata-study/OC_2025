@@ -22,6 +22,7 @@ if st.session_state.page == "top":
     if st.button("▶ スタート"):
         go_to("shortest")
 
+
 # 最短経路問題
 elif st.session_state.page == "shortest":
     st.header("問題①：最短経路を探せ！")
